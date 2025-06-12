@@ -1,1 +1,48 @@
+// ===========================
+// Variables de couleurs
+// ===========================
 
+:root {
+  // Couleurs principales
+  --primary-red: #ff6060;
+  --text-primary: #000000;
+  --background-primary: #ffffff;
+}
+
+// ===========================
+// Reset CSS
+// ===========================
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-primary);
+  background-color: var(--background-primary);
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
