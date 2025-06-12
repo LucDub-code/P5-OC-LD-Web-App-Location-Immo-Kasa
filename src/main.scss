@@ -1,13 +1,11 @@
 // ===========================
-// Variables de couleurs
+// Variables SCSS
 // ===========================
 
-:root {
-  // Couleurs principales
-  --primary-red: #ff6060;
-  --text-primary: #000000;
-  --background-primary: #ffffff;
-}
+// Couleurs principales
+$primary-red: #ff6060;
+$text-primary: #000000;
+$background-primary: #ffffff;
 
 // ===========================
 // Reset CSS
@@ -23,8 +21,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  color: var(--text-primary);
-  background-color: var(--background-primary);
+  color: $text-primary;
+  background-color: $background-primary;
 }
 
 ul,
