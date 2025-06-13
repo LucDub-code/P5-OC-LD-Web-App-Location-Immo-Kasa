@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.gallery {
+  width: 100%;
+  padding: 50px;
+  background-color: $gallery-background;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
