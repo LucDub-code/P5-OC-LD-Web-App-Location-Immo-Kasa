@@ -6,8 +6,12 @@ import Gallery from "../Gallery/Gallery";
 export default function Home() {
   return (
     <div className="home">
-      <HeroBanner image={homeBanner} text="Chez vous, partout et ailleurs" overlayOpacity={0.6} />
+      <HeroBanner
+        image={homeBanner}
+        text="Chez vous, partout et ailleurs"
+        overlayOpacity={0.6}
+      />
       <Gallery />
     </div>
-  )
+  );
 }
