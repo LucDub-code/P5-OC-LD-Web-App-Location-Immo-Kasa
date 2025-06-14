@@ -5,7 +5,7 @@ import AboutBanner from "../../assets/images/hero-banner-about.jpg";
 export default function About() {
   return (
     <div>
-      <HeroBanner image={AboutBanner} />
+      <HeroBanner image={AboutBanner} overlayOpacity={0.3} />
     </div>
   )
 }
