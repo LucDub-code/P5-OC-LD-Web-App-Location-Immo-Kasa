@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.dropdown {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__button {
+    width: 1023px;
+    height: 52px;
+    border-radius: 5px;
+    background-color: $primary-red;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  &__icon {
+    width: 24px;
+  }
+  &__content {
+    width: 1023px;
+    padding: 30px;
+    background-color: $gallery-background;
+    font-size: 1.2rem;
+  }
+}
