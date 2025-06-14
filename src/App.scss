@@ -1,4 +1,9 @@
 .app {
-  margin: 0 100px;
-  max-width: 1240px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  &__content {
+    margin: 0 100px;
+    max-width: 1240px;
+  }
 }

@@ -7,12 +7,14 @@ import Footer from './components/Footer/Footer'
 export default function App() {
   return (
     <>
-      <div className="app">
+    <div className="app">
+      <div className="app__content">
         <Header />
         {/* <Home /> */}
         <About />
       </div>
       <Footer />
+    </div>
     </>
   )
 }
