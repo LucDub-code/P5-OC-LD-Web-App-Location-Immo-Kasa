@@ -10,8 +10,8 @@ export default function App() {
       <div className="app">
         <div className="app__content">
           <Header />
-          {/* <Home /> */}
-          <About />
+          <Home />
+          {/* <About /> */}
         </div>
         <Footer />
       </div>
