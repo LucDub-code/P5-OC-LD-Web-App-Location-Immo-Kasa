@@ -1,7 +1,7 @@
-import "./Dropdown.scss";
+import "./DropdownAbout.scss";
 import { useState } from "react";
-import chevronUp from "../../assets/icons/chevron-up.svg";
-import chevronDown from "../../assets/icons/chevron-down.svg";
+import chevronUp from "../../../assets/icons/chevron-up.svg";
+import chevronDown from "../../../assets/icons/chevron-down.svg";
 
 export default function Dropdown({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
