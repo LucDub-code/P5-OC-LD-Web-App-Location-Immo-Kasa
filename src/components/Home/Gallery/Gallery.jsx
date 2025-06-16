@@ -1,5 +1,5 @@
 import "./Gallery.scss";
-import Card from "../Card/Card";
+import Card from "./Card/Card";
 import { useEffect, useState } from "react";
 
 export default function Gallery() {

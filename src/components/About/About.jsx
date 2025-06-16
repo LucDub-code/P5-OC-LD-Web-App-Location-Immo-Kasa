@@ -1,7 +1,7 @@
 import "./About.scss";
 import HeroBanner from "../HeroBanner/HeroBanner";
 import aboutBanner from "../../assets/images/hero-banner-about.jpg";
-import Dropdown from "../Dropdown/Dropdown";
+import Dropdown from "./DropdownAbout/DropdownAbout";
 
 export default function About() {
   return (

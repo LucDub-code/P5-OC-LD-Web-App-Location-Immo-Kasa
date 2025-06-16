@@ -1,7 +1,7 @@
 import "./Home.scss";
 import HeroBanner from "../HeroBanner/HeroBanner";
 import homeBanner from "../../assets/images/hero-banner-home.jpg";
-import Gallery from "../Gallery/Gallery";
+import Gallery from "./Gallery/Gallery";
 
 export default function Home() {
   return (
