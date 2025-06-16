@@ -7,11 +7,11 @@
     width: 210px;
   }
   &__nav {
-    &-list {
+    &__list {
       display: flex;
       gap: 60px;
     }
-    &-link {
+    &__link {
       font-size: 1.5rem;
       font-weight: 500;
       cursor: pointer;
