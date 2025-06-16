@@ -1,15 +1,10 @@
 import "./Gallery.scss";
 import Card from "./Card/Card";
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { LogementsContext } from "../../../context/LogementsContext";
 
 export default function Gallery() {
-  const [logements, setLogements] = useState([]);
-
-  useEffect(() => {
-    fetch("/logements.json")
-      .then((response) => response.json())
-      .then((data) => setLogements(data));
-  }, []);
+  const { logements } = useContext(LogementsContext);
 
   return (
     <div className="gallery">

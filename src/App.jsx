@@ -5,10 +5,11 @@ import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 import Logement from "./components/Logement/Logement";
 import { Routes, Route } from "react-router-dom";
+import { LogementsProvider } from "./context/LogementsContext";
 
 export default function App() {
   return (
-    <>
+    <LogementsProvider>
       <div className="app">
         <div className="app__content">
           <Header />
@@ -20,6 +21,6 @@ export default function App() {
         </div>
         <Footer />
       </div>
-    </>
+    </LogementsProvider>
   );
 }
