@@ -7,14 +7,14 @@ export default function Header() {
     <div className="header">
       <img className="header__logo" src={logo} alt="Logo de Kasa" />
       <nav className="header__nav">
-        <ul className="header__nav-list">
+        <ul className="header__nav__list">
           <li>
-            <NavLink className="header__nav-link" to="/">
+            <NavLink className="header__nav__link" to="/">
               Accueil
             </NavLink>
           </li>
           <li>
-            <NavLink className="header__nav-link" to="/about">
+            <NavLink className="header__nav__link" to="/about">
               A propos
             </NavLink>
           </li>

@@ -1,0 +1,67 @@
+@import "../../styles/variables";
+
+.logement {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &__infos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    &__title {
+      font-size: 36px;
+      font-weight: 500;
+      color: $primary-red;
+      margin-bottom: 10px;
+    }
+    &__location {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+    &__tags {
+      display: flex;
+      gap: 10px;
+    }
+    &__tags__tag {
+      background-color: $primary-red;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+  &__host-rating {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__host {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    &__name {
+      font-size: 18px;
+      font-weight: 500;
+      color: $primary-red;
+    }
+    &__picture {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 2px solid #c4c4c4;
+    }
+  }
+  &__rating {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    &__star {
+      width: 25px;
+    }
+  }
+}

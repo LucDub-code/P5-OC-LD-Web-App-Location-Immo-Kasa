@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Footer from "./components/Footer/Footer";
 import Logement from "./components/Logement/Logement";
+import NotFound from "./components/NotFound/NotFound";
 import { Routes, Route } from "react-router-dom";
 import { LogementsProvider } from "./context/LogementsContext";
 
@@ -17,6 +18,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/logement/:id" element={<Logement />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
         <Footer />
