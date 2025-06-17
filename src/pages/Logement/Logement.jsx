@@ -5,7 +5,7 @@ import { LogementsContext } from "../../context/LogementsContext";
 import NotFound from "../NotFound/NotFound";
 import StarActive from "../../assets/icons/star-active.svg";
 import StarInactive from "../../assets/icons/star-inactive.svg";
-import DropdownLogement from "./DropdownLogement/DropdownLogement";
+import Dropdown from "../../components/Dropdown/Dropdown";
 
 export default function Logement() {
   const { id } = useParams();
@@ -56,11 +56,13 @@ export default function Logement() {
         </div>
       </div>
       <div className="logement__dropdowns">
-        <DropdownLogement
+        <Dropdown
+          className="logement__dropdown"
           title="Description"
           content=""
         />
-        <DropdownLogement
+        <Dropdown
+          className="logement__dropdown"
           title="Équipements"
           content=""
         />
