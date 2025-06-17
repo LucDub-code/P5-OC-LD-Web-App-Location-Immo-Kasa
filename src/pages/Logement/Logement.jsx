@@ -59,12 +59,18 @@ export default function Logement() {
         <Dropdown
           className="logement__dropdown"
           title="Description"
-          content=""
+          content={logement.description}
         />
         <Dropdown
           className="logement__dropdown"
           title="Équipements"
-          content=""
+          content={
+            <ul className="logement__equipments">
+              {logement.equipments.map((equipment, index) => (
+                <li key={index}>{equipment}</li>
+              ))}
+            </ul>
+          }
         />
       </div>
     </div>
