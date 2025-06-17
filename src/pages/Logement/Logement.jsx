@@ -6,6 +6,7 @@ import NotFound from "../NotFound/NotFound";
 import StarActive from "../../assets/icons/star-active.svg";
 import StarInactive from "../../assets/icons/star-inactive.svg";
 import Dropdown from "../../components/Dropdown/Dropdown";
+import Carrousel from "./Carrousel,jsx/Carrousel";
 
 export default function Logement() {
   const { id } = useParams();
@@ -22,6 +23,7 @@ export default function Logement() {
 
   return (
     <div className="logement">
+      <Carrousel images={logement.pictures} />
       <div className="logement__summary">
         <div className="logement__infos">
           <h2 className="logement__infos__title">{logement.title}</h2>
