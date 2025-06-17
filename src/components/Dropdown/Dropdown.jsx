@@ -1,7 +1,6 @@
 import "./Dropdown.scss";
 import { useState } from "react";
-import chevronUp from "../../assets/icons/chevron-up.svg";
-import chevronDown from "../../assets/icons/chevron-down.svg";
+import chevron from "../../assets/icons/chevron.svg";
 
 export default function Dropdown({ title, content, className }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,17 +8,16 @@ export default function Dropdown({ title, content, className }) {
     <div className={`dropdown ${className}`}>
       <button className="dropdown__button" onClick={() => setIsOpen(!isOpen)}>
         {title}
-        {isOpen ? (
-          <img
-            className="dropdown__icon"
-            src={chevronDown}
-            alt="chevron down"
-          />
-        ) : (
-          <img className="dropdown__icon" src={chevronUp} alt="chevron up" />
-        )}
+        <img
+          className={`dropdown__icon ${isOpen ? "dropdown__icon--open" : ""}`}
+          src={chevron}
+          alt="chevron"
+        />
       </button>
-      {isOpen && <div className="dropdown__content">{content}</div>}
+      <div
+        className={`dropdown__content ${isOpen ? "dropdown__content--open" : ""}`}>
+        {content}
+      </div>
     </div>
   );
 }

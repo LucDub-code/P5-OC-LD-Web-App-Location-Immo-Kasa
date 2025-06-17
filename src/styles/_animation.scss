@@ -1,0 +1,23 @@
+.dropdown {
+  &__icon {
+    transition: transform 0.3s ease-out;
+    &--open {
+      transform: rotate(-180deg);
+    }
+  }
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+    &--open {
+      max-height: 200px;
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+      padding: 30px;
+    }
+  }
+}
