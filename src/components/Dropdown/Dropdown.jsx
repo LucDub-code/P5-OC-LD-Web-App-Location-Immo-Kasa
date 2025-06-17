@@ -1,12 +1,12 @@
-import "./DropdownAbout.scss";
+import "./Dropdown.scss";
 import { useState } from "react";
-import chevronUp from "../../../assets/icons/chevron-up.svg";
-import chevronDown from "../../../assets/icons/chevron-down.svg";
+import chevronUp from "../../assets/icons/chevron-up.svg";
+import chevronDown from "../../assets/icons/chevron-down.svg";
 
-export default function DropdownAbout({ title, content }) {
+export default function Dropdown({ title, content, className }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="dropdown dropdown-about">
+    <div className={`dropdown ${className}`}>
       <button className="dropdown__button" onClick={() => setIsOpen(!isOpen)}>
         {title}
         {isOpen ? (

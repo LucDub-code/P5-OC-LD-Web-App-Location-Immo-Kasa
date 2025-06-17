@@ -1,0 +1,14 @@
+.about {
+  &__content {
+    margin-bottom: 40px;
+  }
+  &__dropdown {
+    width: 82%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
