@@ -13,7 +13,7 @@
     visibility: hidden;
     transition: max-height 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
     &--open {
-      max-height: 200px;
+      max-height: 300px;
       transform: translateY(0);
       opacity: 1;
       visibility: visible;

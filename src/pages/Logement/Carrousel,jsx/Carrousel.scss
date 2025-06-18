@@ -35,4 +35,13 @@
       transform: translateX(100%);
     }
   }
+  &__counter {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    z-index: 1;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

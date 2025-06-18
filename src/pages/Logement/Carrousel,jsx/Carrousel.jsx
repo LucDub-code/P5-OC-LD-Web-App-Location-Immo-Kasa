@@ -49,6 +49,11 @@ export default function Carrousel({ images }) {
         }
         return null;
       })}
+      {images.length > 1 && (
+        <div className="carrousel__counter">
+          {ImageActive + 1}/{images.length}
+        </div>
+      )}
     </div>
   );
 }
