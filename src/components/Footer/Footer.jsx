@@ -10,7 +10,7 @@ export default function Footer() {
           src={logoWhite}
           alt="Logo blanc de Kasa"
         />
-        <p className="footer__copyright">© 2020 Kasa. All rights reserved</p>
+        <p className="footer__copyright">© 2020 Kasa. All <br className="footer__break" />rights reserved</p>
       </div>
     </div>
   );
