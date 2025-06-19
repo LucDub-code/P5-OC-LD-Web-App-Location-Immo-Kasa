@@ -25,7 +25,15 @@
 
   // Media queries
 
-  @media (max-width: 375px) {
+  @media (max-width: 768px) {
+    &__nav {
+      &__list {
+        gap: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
     padding: 25px 0 30px;
     &__logo {
       width: 145px;
