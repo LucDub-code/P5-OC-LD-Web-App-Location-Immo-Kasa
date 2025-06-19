@@ -18,6 +18,7 @@
     font-weight: 500;
     color: $primary-red;
     margin-bottom: 150px;
+    text-align: center;
   }
   &__link {
     font-size: 18px;
@@ -25,5 +26,37 @@
     color: #000;
     margin-bottom: 150px;
     border-bottom: 1px solid #000;
+  }
+  &__break {
+    display: none;
+  }
+
+  // Media queries
+
+  @media (max-width: 1080px) {
+    &__break {
+      display: block;
+    }
+  }
+
+  @media (max-width: 780px) {
+    &__title {
+      font-size: 180px;
+    }
+    &__text {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__title {
+      font-size: 96px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+    &__link {
+      font-size: 14px;
+    }
   }
 }
