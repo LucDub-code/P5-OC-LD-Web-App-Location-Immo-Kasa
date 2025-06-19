@@ -20,4 +20,26 @@
     color: #fff;
     margin-bottom: 50px;
   }
+  &__break {
+    display: none;
+  }
+
+  // Media queries
+
+  @media (max-width: 375px) {
+    &__container {
+      gap: 15px;
+    }
+    &__logo {
+      margin-top: 60px;
+    }
+    &__copyright {
+      font-size: 12px;
+      margin-bottom: 60px;
+    }
+    &__break {
+      display: block;
+    }
+  }
+
 }
