@@ -8,8 +8,6 @@
     border-radius: 5px;
     background-color: $primary-red;
     color: #fff;
-    font-size: 1.5rem;
-    font-weight: 700;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +22,6 @@
   &__content {
     width: 100%;
     background-color: $gallery-background;
-    font-size: 1.2rem;
+    font-size: 18px;
   }
 }

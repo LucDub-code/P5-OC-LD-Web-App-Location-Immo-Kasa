@@ -19,7 +19,7 @@
     z-index: 1;
   }
   &__title {
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: 700;
     color: #fff;
     z-index: 2;
@@ -30,6 +30,18 @@
   }
 
   // Media queries
+
+  @media (max-width: 1080px) {
+    &__title {
+      font-size: 36px;
+    }
+  }
+
+  @media (max-width: 780px) {
+    &__title {
+      font-size: 32px;
+    }
+  }
 
   @media (max-width: 480px) {
     height: 111px;
