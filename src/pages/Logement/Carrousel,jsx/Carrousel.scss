@@ -44,4 +44,45 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  // Media queries
+
+  @media (max-width: 1080px) {
+    height: 335px;
+    margin-bottom: 20px;
+    &__chevron {
+      height: 60px;
+    }
+  }
+
+
+  @media (max-width: 780px) {
+    height: 255px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    &__chevron {
+      height: 40px;
+      &--left {
+        left: 10px;
+      }
+      &--right {
+        right: 10px;
+      }
+    }
+    &__counter {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__chevron {
+      height: 20px;
+      &--left {
+        left: 5px;
+      }
+      &--right {
+        right: 5px;
+      }
+    }
+  }
 }
