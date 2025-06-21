@@ -79,6 +79,9 @@
       font-size: 18px;
       font-weight: $font-weight-bold;
     }
+    .dropdown__content {
+      font-size: 18px;
+    }
   }
 
   // Media queries
@@ -113,6 +116,9 @@
       .dropdown__button {
         font-size: 16px;
         height: 40px;
+      }
+      .dropdown__content {
+        font-size: 16px;
       }
     }
   }
@@ -165,8 +171,11 @@
     &__dropdown {
       width: 100%;
       .dropdown__button {
-        font-size: 13px;
+        font-size: 14px;
         height: 30px;
+      }
+      .dropdown__content {
+        font-size: 14px;
       }
     }
   }
@@ -181,6 +190,14 @@
     &__infos {
       &__tags__tag {
         font-size: 8px;
+      }
+    }
+    &__dropdown {
+      .dropdown__button {
+        font-size: 13px;
+      }
+      .dropdown__content {
+        font-size: 13px;
       }
     }
   }

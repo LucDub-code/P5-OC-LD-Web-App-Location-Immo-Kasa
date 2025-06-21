@@ -22,6 +22,19 @@
   &__content {
     width: 100%;
     background-color: $gallery-background;
-    font-size: 18px;
+  }
+
+  // Media queries
+
+  @media (max-width: 780px) {
+    &__icon {
+      width: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__icon {
+      width: 16px;
+    }
   }
 }

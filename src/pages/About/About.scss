@@ -16,14 +16,58 @@
       font-size: 24px;
       font-weight: $font-weight-bold;
     }
+    .dropdown__content {
+      font-size: 18px;
+    }
   }
 
   // Media queries
 
   @media (max-width: 780px) {
+    .hero-banner {
+      height: 167px;
+      margin-bottom: 30px;
+    }
     &__dropdown {
       width: 100%;
-      // margin-bottom: 20px;
+    }
+    &__content {
+      margin-bottom: 30px;
+    }
+    &__dropdown {
+      margin-bottom: 30px;
+    }
+    &__dropdown {
+      .dropdown__button {
+        font-size: 18px;
+        height: 40px;
+      }
+      .dropdown__content {
+        font-size: 16px;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-banner {
+      height: 111px;
+      margin-bottom: 20px;
+    }
+    &__content {
+      margin-bottom: 20px;
+    }
+    &__dropdown {
+      margin-bottom: 20px;
+    }
+    &__dropdown {
+      width: 100%;
+      .dropdown__button {
+        font-size: 13px;
+        height: 30px;
+      }
+      .dropdown__content {
+        font-size: 13px;
+      }
     }
   }
 }
