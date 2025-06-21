@@ -1,4 +1,4 @@
-@import "../../styles/_variables.scss";
+@import "../../styles/variables";
 
 .about {
   &__content {
@@ -13,11 +13,11 @@
     justify-content: center;
     align-items: center;
     .dropdown__button {
-      font-size: 24px;
+      font-size: $font-size-xl;
       font-weight: $font-weight-bold;
     }
     .dropdown__content {
-      font-size: 18px;
+      font-size: $font-size-lg;
     }
   }
 
@@ -39,15 +39,15 @@
     }
     &__dropdown {
       .dropdown__button {
-        font-size: 18px;
+        font-size: $font-size-lg;
         height: 40px;
       }
       .dropdown__content {
-        font-size: 16px;
+        font-size: $font-size-md-lg;
       }
     }
   }
-  
+
   @media (max-width: 480px) {
     .hero-banner {
       height: 111px;
@@ -62,11 +62,11 @@
     &__dropdown {
       width: 100%;
       .dropdown__button {
-        font-size: 13px;
+        font-size: $font-size-md;
         height: 30px;
       }
       .dropdown__content {
-        font-size: 13px;
+        font-size: $font-size-sm-lg;
       }
     }
   }

@@ -1,3 +1,5 @@
+@import "../../styles/_variables.scss";
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -12,8 +14,8 @@
       gap: 50px;
     }
     &__link {
-      font-size: 24px;
-      font-weight: 500;
+      font-size: $font-size-xl;
+      font-weight: $font-weight-medium;
       cursor: pointer;
       color: #000;
       &.active {
@@ -34,7 +36,7 @@
         gap: 20px;
       }
       &__link {
-        font-size: 18px;
+        font-size: $font-size-lg;
         text-transform: uppercase;
       }
     }
@@ -50,7 +52,7 @@
         gap: 30px;
       }
       &__link {
-        font-size: 12px;
+        font-size: $font-size-sm-lg;
       }
     }
   }
@@ -58,7 +60,7 @@
   @media (max-width: 380px) {
     &__nav {
       &__link {
-        font-size: 10px;
+        font-size: $font-size-sm-md;
       }
       &__list {
         gap: 15px;
