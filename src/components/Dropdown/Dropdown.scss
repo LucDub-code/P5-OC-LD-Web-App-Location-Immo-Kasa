@@ -15,6 +15,8 @@
     cursor: pointer;
     border: none;
     outline: none;
+    position: relative;
+    z-index: 2;
   }
   &__icon {
     width: 24px;
@@ -22,6 +24,8 @@
   &__content {
     width: 100%;
     background-color: $gallery-background;
+    position: relative;
+    z-index: 1;
   }
 
   // Media queries
