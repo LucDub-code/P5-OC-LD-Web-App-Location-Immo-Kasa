@@ -6,7 +6,7 @@ export function LogementsProvider({ children }) {
   const [logements, setLogements] = useState([]);
 
   useEffect(() => {
-    fetch("/logements.json")
+    fetch("/P5-OC-LD-Web-App-Location-Immo-Kasa/logements.json")
       .then((response) => response.json())
       .then((data) => setLogements(data));
   }, []);
