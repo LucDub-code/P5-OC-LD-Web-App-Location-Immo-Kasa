@@ -1,5 +1,5 @@
 import "./Logement.scss";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { LogementsContext } from "../../context/LogementsContext";
 import NotFound from "../NotFound/NotFound";
@@ -15,7 +15,7 @@ export default function Logement() {
   const logement = logements.find((logement) => logement.id === id);
 
   if (!logement) {
-    return <NotFound />;
+    return <Navigate to="/404" />;
   }
 
   const rating = parseInt(logement.rating);
