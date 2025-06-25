@@ -2,7 +2,6 @@ import "./Logement.scss";
 import { useParams, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { LogementsContext } from "../../context/LogementsContext";
-import NotFound from "../NotFound/NotFound";
 import StarActive from "../../assets/icons/star-active.svg";
 import StarInactive from "../../assets/icons/star-inactive.svg";
 import Dropdown from "../../components/Dropdown/Dropdown";
