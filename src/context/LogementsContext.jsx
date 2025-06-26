@@ -1,6 +1,7 @@
 import { createContext, useState, useEffect } from "react";
 
 const LogementsContext = createContext();
+export { LogementsContext };
 
 export function LogementsProvider({ children }) {
   const [logements, setLogements] = useState([]);
@@ -18,4 +19,3 @@ export function LogementsProvider({ children }) {
   );
 }
 
-export { LogementsContext };
