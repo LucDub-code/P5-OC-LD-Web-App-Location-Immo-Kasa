@@ -14,9 +14,14 @@ export default function Dropdown({ title, content, className }) {
           alt="chevron"
         />
       </button>
-      <div
-        className={`dropdown__content ${isOpen ? "dropdown__content--open" : ""}`}>
-        {content}
+      <div className="dropdown__wrapper">
+        <div
+          className={`dropdown__content ${
+            isOpen ? "dropdown__content--open" : ""
+          }`}
+        >
+          <div className="dropdown__content--inner">{content}</div>
+        </div>
       </div>
     </div>
   );

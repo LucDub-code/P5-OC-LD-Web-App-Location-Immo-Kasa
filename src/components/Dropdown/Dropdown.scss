@@ -21,9 +21,12 @@
   &__icon {
     width: 24px;
   }
+  &__wrapper {
+    overflow: hidden;
+    background-color: $gallery-background;
+  }
   &__content {
     width: 100%;
-    background-color: $gallery-background;
     position: relative;
     z-index: 1;
   }
