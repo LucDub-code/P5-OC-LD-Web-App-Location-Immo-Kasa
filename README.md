@@ -15,5 +15,3 @@ Application web de location immobilière avec React.
 npm install
 npm run dev
 ```
-
-Projet OpenClassrooms P5
